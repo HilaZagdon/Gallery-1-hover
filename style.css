@@ -1,0 +1,121 @@
+.container-gallery {
+  display: grid;
+  height: 80vh;
+  width: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-areas:
+    "headr headr headr headr headr"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "footr footr footr footr footr";
+}
+
+.headr {
+  grid-area: headr;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sliders-1-container {
+  display: flex;
+  width: 25vw;
+  overflow: hidden;
+  box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3),
+    10px 25px 30px rgba(0, 0, 0, 0.3);
+  border: 3vh solid transparent;
+  border-image: linear-gradient(
+    121deg,
+    rgb(12, 124, 137) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-image-slice: 1;
+}
+
+.sliders-1-images {
+  display: flex;
+}
+
+.sliders-1-images:hover {
+  animation: sliders 20s infinite;
+}
+
+.auto-1-img {
+  height: 80vh;
+  width: 25vw;
+}
+
+.footr {
+  grid-area: footr;
+}
+
+@keyframes sliders {
+  0% {
+    transform: translateX(0);
+  }
+  8% {
+    transform: translateX(0);
+  }
+  11% {
+    transform: translateX(-10%);
+  }
+  19% {
+    transform: translateX(-10%);
+  }
+  22% {
+    transform: translateX(-20%);
+  }
+  30% {
+    transform: translateX(-20%);
+  }
+  33% {
+    transform: translateX(-30%);
+  }
+  41% {
+    transform: translateX(-30%);
+  }
+  44% {
+    transform: translateX(-40%);
+  }
+  52% {
+    transform: translateX(-40%);
+  }
+  55% {
+    transform: translateX(-50%);
+  }
+  63% {
+    transform: translateX(-50%);
+  }
+  66% {
+    transform: translateX(-60%);
+  }
+  74% {
+    transform: translateX(-60%);
+  }
+  77% {
+    transform: translateX(-70%);
+  }
+  85% {
+    transform: translateX(-70%);
+  }
+  88% {
+    transform: translateX(-80%);
+  }
+  96% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
